@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" role="img" aria-labelledby="logoTitle">
+  <title id="logoTitle">SpendWorld</title>
+  <circle cx="32" cy="32" r="29" stroke="currentColor" stroke-width="2"/>
+  <ellipse cx="32" cy="32" rx="12" ry="29" stroke="currentColor" stroke-width="1.4" opacity="0.55"/>
+  <ellipse cx="32" cy="32" rx="29" ry="11" stroke="currentColor" stroke-width="1.4" opacity="0.55"/>
+  <path d="M8 26c8 3 16 4 24 2s16-3 24-1" stroke="currentColor" stroke-width="1.2" opacity="0.4"/>
+  <path d="M7 38c9-2 17-1 25 2 8 3 16 2 25-2" stroke="currentColor" stroke-width="1.2" opacity="0.4"/>
+  <path d="M18 44c6-10 12-16 20-22 5-4 10-6 16-7" stroke="#d4a853" stroke-width="2.2" stroke-linecap="round"/>
+  <circle cx="18" cy="44" r="3.2" fill="#d4a853"/>
+  <circle cx="54" cy="15" r="2.4" fill="#5ee0b0"/>
+</svg>

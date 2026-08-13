@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SpendWorld — 당신의 소비가 그리는 세계</title>
+  <meta name="description" content="SpendWorld는 일상의 지출을 하나의 지도로 모아 보여주는 Android 가계부입니다. 카테고리, 예산, 다중 통화를 한 화면에서 읽으세요.">
+  <meta name="theme-color" content="#0b1620">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <meta property="og:title" content="SpendWorld — 당신의 소비가 그리는 세계">
+  <meta property="og:description" content="흩어진 지출을 하나의 풍경으로. Android를 위한 소비 지도 가계부.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/og.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=Gowun+Batang:wght@400;700&family=IBM+Plex+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "SpendWorld",
+    "applicationCategory": "FinanceApplication",
+    "operatingSystem": "Android",
+    "description": "일상의 지출을 지도처럼 보여주는 Android 가계부",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "KRW" }
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="skip">본문으로 건너뛰기</a>
+  <header class="site-header" data-header>
+    <div class="wrap">
+      <a class="brand" href="#top" aria-label="SpendWorld">
+        <svg viewBox="0 0 64 64" aria-hidden="true">
+          <circle cx="32" cy="32" r="29" fill="none" stroke="currentColor" stroke-width="2"/>
+          <ellipse cx="32" cy="32" rx="12" ry="29" fill="none" stroke="currentColor" stroke-width="1.4" opacity="0.55"/>
+          <path d="M18 44c6-10 12-16 20-22 5-4 10-6 16-7" stroke="#d4a853" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+          <circle cx="18" cy="44" r="3.2" fill="#d4a853"/>
+        </svg>
+        SpendWorld
+      </a>
+      <nav class="nav" data-nav aria-label="주요">
+        <a href="#features" data-i18n="nav.features">기능</a>
+        <a href="#preview" data-i18n="nav.preview">미리보기</a>
+        <a href="#story" data-i18n="nav.story">이야기</a>
+        <a href="#faq" data-i18n="nav.faq">FAQ</a>
+      </nav>
+      <div class="header-actions">
+        <div class="lang-toggle" role="group" aria-label="Language">
+          <button type="button" data-lang="ko" aria-pressed="true">KO</button>
+          <button type="button" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+        <a class="btn btn-primary" href="#download" data-i18n="nav.cta">출시 알림</a>
+        <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-label="메뉴">
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="wrap hero-grid">
+        <div>
+          <p class="eyebrow reveal" data-i18n="hero.eyebrow">Android · 소비의 지도</p>
+          <h1 class="reveal d1" data-i18n="hero.title">당신의 소비가 그리는 세계</h1>
+          <p class="lede reveal d2" data-i18n="hero.lede">흩어진 영수증과 이체 내역을 하나의 풍경으로 모읍니다. 이번 달에 어디에 머물렀는지, 돈의 지도 위에서 읽어보세요.</p>
+          <div class="hero-cta reveal d3">
+            <a class="btn btn-primary" href="#download" data-i18n="hero.cta">Android에서 시작하기</a>
+            <a class="btn btn-ghost" href="#preview" data-i18n="hero.secondary">화면 미리보기</a>
+          </div>
+          <div class="hero-meta reveal d3">
+            <div>
+              <b>12</b>
+              <span data-i18n="hero.stat1">카테고리 대륙</span>
+            </div>
+            <div>
+              <b>₩ · $ · €</b>
+              <span data-i18n="hero.stat2">다중 통화</span>
+            </div>
+            <div>
+              <b data-i18n="hero.stat3value">기기 안</b>
+              <span data-i18n="hero.stat3">데이터가 머무는 곳</span>
+            </div>
+          </div>
+        </div>
+        <div class="globe-stage reveal d2" aria-hidden="false">
+          <div class="orbit"></div>
+          <div class="globe">
+            <svg viewBox="0 0 400 400" aria-hidden="true">
+              <ellipse cx="200" cy="200" rx="78" ry="188" fill="none" stroke="rgba(242,235,224,0.18)" stroke-width="1.2"/>
+              <ellipse cx="200" cy="200" rx="188" ry="70" fill="none" stroke="rgba(242,235,224,0.18)" stroke-width="1.2"/>
+              <path d="M40 150c40 20 90 28 160 10s110-18 160 8" fill="none" stroke="rgba(242,235,224,0.12)"/>
+              <path d="M36 250c50-12 100-6 150 14 52 20 108 10 170-18" fill="none" stroke="rgba(242,235,224,0.12)"/>
+              <path d="M92 286c48-86 108-128 176-168" fill="none" stroke="#d4a853" stroke-width="2.4" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <button class="pin" style="left:32%;top:62%" type="button" aria-label="식비 ₩428,000">
+            <span class="pin-label" data-i18n="pin.food">식비 · ₩428,000</span>
+          </button>
+          <button class="pin aurora" style="left:68%;top:28%" type="button" aria-label="교통 ₩86,400">
+            <span class="pin-label" data-i18n="pin.transit">교통 · ₩86,400</span>
+          </button>
+          <button class="pin clay" style="left:58%;top:72%" type="button" aria-label="쇼핑 ₩152,000">
+            <span class="pin-label" data-i18n="pin.shop">쇼핑 · ₩152,000</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-paper" id="features">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow" data-i18n="features.eyebrow">Features</p>
+            <h2 data-i18n="features.title">숫자가 아니라, 지형으로</h2>
+          </div>
+          <p data-i18n="features.lede">가계부를 표로만 두면 금방 닫게 됩니다. SpendWorld는 카테고리를 대륙처럼, 예산을 국경처럼 두어 한 달의 흐름이 보이게 합니다.</p>
+        </div>
+        <div class="bento">
+          <article class="card">
+            <div class="card-kicker" data-i18n="f1.kicker">Map</div>
+            <h3 data-i18n="f1.title">소비 지도</h3>
+            <p data-i18n="f1.body">식비, 교통, 주거, 구독이 각각의 땅으로 펼쳐집니다. 어디에 머무르고 있는지가 한눈에 보입니다.</p>
+            <div class="map-mini" aria-hidden="true">
+              <span class="continent food"></span>
+              <span class="continent transit"></span>
+              <span class="continent shop"></span>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-kicker" data-i18n="f2.kicker">Border</div>
+            <h3 data-i18n="f2.title">예산의 국경</h3>
+            <p data-i18n="f2.body">한도를 넘기 전에 알려 드립니다. 죄책감이 아니라, 방향만 조금 바꿉니다.</p>
+          </article>
+          <article class="card">
+            <div class="card-kicker" data-i18n="f3.kicker">Currency</div>
+            <h3 data-i18n="f3.title">경계를 넘는 기록</h3>
+            <p data-i18n="f3.body">여행 중에도, 해외 결제에도. 원·달러·유로를 같은 세계 위에 올려 둡니다.</p>
+          </article>
+          <article class="card">
+            <div class="card-kicker" data-i18n="f4.kicker">Journal</div>
+            <h3 data-i18n="f4.title">월간 항해 일지</h3>
+            <p data-i18n="f4.body">리포트가 아니라 이야기로 남습니다. 지난달과 비교해 어디로 이동했는지 읽으세요.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-paper" id="how" style="padding-top:0">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow" data-i18n="how.eyebrow">How it works</p>
+            <h2 data-i18n="how.title">기록하고, 그리고, 보다</h2>
+          </div>
+          <p data-i18n="how.lede">입력은 가볍게, 이해는 깊게. 세 걸음이면 이번 달의 세계가 모습을 갖춥니다.</p>
+        </div>
+        <div class="steps">
+          <article class="step">
+            <div class="step-num">01</div>
+            <h3 data-i18n="how.1.title">기록하다</h3>
+            <p data-i18n="how.1.body">금액과 카테고리만 남기면 됩니다. 영수증을 붙잡지 않아도 지도는 자랍니다.</p>
+          </article>
+          <article class="step">
+            <div class="step-num">02</div>
+            <h3 data-i18n="how.2.title">그리다</h3>
+            <p data-i18n="how.2.body">지출이 쌓일수록 대륙이 넓어집니다. 예산은 그 땅의 국경이 됩니다.</p>
+          </article>
+          <article class="step">
+            <div class="step-num">03</div>
+            <h3 data-i18n="how.3.title">보다</h3>
+            <p data-i18n="how.3.body">한 달을 닫을 때, 숫자 목록 대신 당신이 머문 세계를 한 장으로 봅니다.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="preview">
+      <div class="wrap preview">
+        <div class="phone" aria-label="SpendWorld 앱 미리보기">
+          <div class="phone-bar"><span>9:41</span><span>SpendWorld</span></div>
+          <p class="eyebrow" data-i18n="app.month">2026년 8월</p>
+          <h3 data-i18n="app.spent">이번 달 지출</h3>
+          <div class="balance">₩1,284,600</div>
+          <div class="bars" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+          <div class="tx"><div><b data-i18n="tx.1">카페 · 성수</b><small data-i18n="tx.1s">식비 · 오늘</small></div><b>-₩6,400</b></div>
+          <div class="tx"><div><b data-i18n="tx.2">지하철 정기권</b><small data-i18n="tx.2s">교통 · 어제</small></div><b>-₩62,000</b></div>
+          <div class="tx"><div><b data-i18n="tx.3">마켓컬리</b><small data-i18n="tx.3s">식비 · 8/11</small></div><b>-₩38,200</b></div>
+          <div class="tx"><div><b data-i18n="tx.4">Notion</b><small data-i18n="tx.4s">구독 · 8/09</small></div><b>-$10.00</b></div>
+        </div>
+        <div class="preview-copy">
+          <p class="eyebrow" data-i18n="preview.eyebrow">Preview</p>
+          <h2 data-i18n="preview.title">주머니 속의 작은 지도책</h2>
+          <p data-i18n="preview.body">홈 화면은 잔액이 아니라 이번 달의 지형입니다. 큰 대륙이 식비인지, 얇은 섬이 구독인지, 열기 전에 이미 보입니다.</p>
+          <ul>
+            <li data-i18n="preview.l1">카테고리별 비중을 막대 지형으로 표시</li>
+            <li data-i18n="preview.l2">최근 기록이 여행 일지처럼 쌓임</li>
+            <li data-i18n="preview.l3">다른 통화도 같은 타임라인에 공존</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section story" id="story">
+      <div class="wrap story-grid">
+        <blockquote class="quote" data-i18n="story.quote">돈은 사라지는 것이 아니라, 당신이 머문 자리입니다.</blockquote>
+        <div>
+          <p class="eyebrow" data-i18n="story.eyebrow">Why SpendWorld</p>
+          <h2 data-i18n="story.title">가계부를 닫지 않게</h2>
+          <p data-i18n="story.body">많은 가계부는 입력만 강요합니다. SpendWorld는 기록이 쌓인 뒤에 남는 풍경을 먼저 설계했습니다. 소비를 심판하지 않고, 어디로 흘렀는지만 분명히 보여 드립니다. 데이터는 기본적으로 기기 안에 머뭅니다.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="faq">
+      <div class="wrap">
+        <p class="eyebrow">FAQ</p>
+        <h2 data-i18n="faq.title">자주 묻는 질문</h2>
+        <div class="faq">
+          <details open>
+            <summary data-i18n="faq.1.q">무료인가요?</summary>
+            <p data-i18n="faq.1.a">핵심 기록·지도·예산은 무료로 제공합니다. 출시 후 선택형 프리미엄이 생기더라도, 가계부의 기본은 열어 둘 예정입니다.</p>
+          </details>
+          <details>
+            <summary data-i18n="faq.2.q">내 거래 내역은 어디에 저장되나요?</summary>
+            <p data-i18n="faq.2.a">기본은 기기 로컬 저장입니다. 클라우드 동기화는 나중에 선택 기능으로 넣을 계획이며, 그때도 명시적으로 동의할 때만 올라갑니다.</p>
+          </details>
+          <details>
+            <summary data-i18n="faq.3.q">iOS도 나오나요?</summary>
+            <p data-i18n="faq.3.a">지금은 Android를 먼저 만듭니다. 홈페이지와 앱이 자리를 잡으면 iOS도 검토합니다.</p>
+          </details>
+          <details>
+            <summary data-i18n="faq.4.q">은행 계좌를 연결해야 하나요?</summary>
+            <p data-i18n="faq.4.a">아니요. 직접 기록하는 가계부입니다. 연결 없이도 소비의 세계를 그릴 수 있습니다.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="download">
+      <div class="wrap">
+        <div class="cta-band">
+          <div>
+            <p class="eyebrow" data-i18n="cta.eyebrow">Coming soon</p>
+            <h2 data-i18n="cta.title">지도를 펼칠 준비를 하세요</h2>
+            <p data-i18n="cta.body">Google Play 출시 소식을 이메일로 전해 드립니다. 스팸은 보내지 않습니다.</p>
+          </div>
+          <form class="waitlist-form" data-waitlist>
+            <div class="waitlist">
+              <label class="visually-hidden" for="email" data-i18n="cta.email">이메일</label>
+              <input id="email" name="email" type="email" required autocomplete="email" placeholder="you@email.com">
+              <button class="btn btn-ink" type="submit" data-i18n="cta.submit">알림 받기</button>
+            </div>
+            <p class="waitlist-note" data-i18n="cta.note">Android 앱은 준비 중입니다. 이 안내는 이 브라우저에만 저장됩니다.</p>
+            <p class="form-status" data-status hidden></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div>
+        <strong>SpendWorld</strong>
+        <p data-i18n="footer.tag">소비의 지도를 그리는 Android 가계부</p>
+      </div>
+      <div>
+        <a href="privacy.html" data-i18n="footer.privacy">개인정보 처리방침</a>
+      </div>
+      <p>© <span data-year></span> SpendWorld</p>
+    </div>
+  </footer>
+  <style>
+    .visually-hidden {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      clip: rect(0 0 0 0);
+    }
+  </style>
+  <script src="js/main.js"></script>
+</body>
+</html>
