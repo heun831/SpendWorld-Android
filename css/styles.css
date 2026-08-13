@@ -417,7 +417,12 @@ h3,
 .section-paper {
   background: var(--paper);
   color: var(--paper-ink);
-  border-radius: 48px 48px 0 0;
+  border-radius: 48px;
+  margin: 0 16px 8px;
+}
+
+.how-block {
+  padding-top: 24px;
 }
 
 .section-head {
@@ -629,6 +634,8 @@ h3,
     linear-gradient(180deg, rgba(11, 22, 32, 0.03), transparent),
     var(--paper-deep);
   color: var(--paper-ink);
+  border-radius: 48px;
+  margin: 0 16px;
 }
 
 .story-grid {
@@ -807,8 +814,9 @@ h3,
   }
 
   .cta-band,
-  .section-paper {
-    border-radius: 32px 32px 0 0;
+  .section-paper,
+  .story {
+    border-radius: 32px;
     padding: 32px 22px;
   }
 }
